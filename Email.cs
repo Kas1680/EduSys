@@ -26,6 +26,7 @@ namespace EduSys
             {
                 email = Char.ToLower(FirstName[0]) + LastName.ToLower() + ID;
             }
+            email += "@myedu.ca";
             return email;
         }
 
@@ -34,6 +35,11 @@ namespace EduSys
             if (n < 0) return 0;
             if (n < 10) return 1;
             return 1 + countDigit(n / 10);
+        }
+
+        public string getEmail()
+        {
+            return this.Address;
         }
     }
 }

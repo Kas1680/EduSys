@@ -23,7 +23,7 @@ namespace EduSys
             this.FirstName = FirstName;
             this.LastName = LastName;
             this.Departments = Department;
-            this.Password = Password;
+            this.Password = new Password("Password");
             this.ID = IDgenerator;
             this.EmailAddress = new Email(FirstName, LastName, ID) ;
             IDgenerator++;

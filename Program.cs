@@ -11,7 +11,9 @@ namespace EduSys
         static void Main(string [] args)
         {
             Email myEmail = new Email("Kas", "Kai", 1680);
-            Console.WriteLine(myEmail);
+            Console.WriteLine(myEmail.getEmail());
+
+            Instructor kas = new Instructor("Kas", "Kai", "Math", "asdf123");
         }
     }
 }

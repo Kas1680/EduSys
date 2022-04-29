@@ -7,9 +7,9 @@ C:\Users\User\Desktop\Summer\Project\EduSys\bin\Debug\net6.0\EduSys.exe
 C:\Users\User\Desktop\Summer\Project\EduSys\bin\Debug\net6.0\EduSys.deps.json
 C:\Users\User\Desktop\Summer\Project\EduSys\bin\Debug\net6.0\EduSys.runtimeconfig.json
 C:\Users\User\Desktop\Summer\Project\EduSys\bin\Debug\net6.0\EduSys.dll
-C:\Users\User\Desktop\Summer\Project\EduSys\bin\Debug\net6.0\ref\EduSys.dll
 C:\Users\User\Desktop\Summer\Project\EduSys\bin\Debug\net6.0\EduSys.pdb
 C:\Users\User\Desktop\Summer\Project\EduSys\obj\Debug\net6.0\EduSys.dll
 C:\Users\User\Desktop\Summer\Project\EduSys\obj\Debug\net6.0\ref\EduSys.dll
 C:\Users\User\Desktop\Summer\Project\EduSys\obj\Debug\net6.0\EduSys.pdb
 C:\Users\User\Desktop\Summer\Project\EduSys\obj\Debug\net6.0\EduSys.genruntimeconfig.cache
+C:\Users\User\Desktop\Summer\Project\EduSys\obj\Debug\net6.0\refint\EduSys.dll
