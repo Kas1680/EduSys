@@ -13,24 +13,28 @@ namespace EduSys
         public string Departments { get; set; }
 
         public Email EmailAddress { get; set; }
-        private string Password { get; set; }
+        private Password password { get; set; }
         private static int IDgenerator = 10000;
 
         // Constructor
         public Instructor(string FirstName, string LastName, 
-            string Department, string Password)
+            string Department, string pw)
          {
             this.FirstName = FirstName;
             this.LastName = LastName;
             this.Departments = Department;
-            this.Password = new Password("Password");
+            this.password = new Password(pw);
             this.ID = IDgenerator;
             this.EmailAddress = new Email(FirstName, LastName, ID) ;
             IDgenerator++;
         }
 
+        public string getPW()
+        {
+            return this.password.getPw();
+        }
         // Methods related to Courses
-        public void CreateCourse()
+        public void CreateCourse(string courseName, int courseID)
         {
 
         }

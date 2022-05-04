@@ -14,6 +14,7 @@ namespace EduSys
             Console.WriteLine(myEmail.getEmail());
 
             Instructor kas = new Instructor("Kas", "Kai", "Math", "asdf123");
+            Console.WriteLine(kas.getPW());
         }
     }
 }
