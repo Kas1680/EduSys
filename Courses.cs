@@ -8,5 +8,8 @@ namespace EduSys
 {
     public class Courses
     {
+        public string courseCode { get; set; }
+        public Instructor courseIns { get; set; }
+        public Assignments assignments { get; set; }
     }
 }

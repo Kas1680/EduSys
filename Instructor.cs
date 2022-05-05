@@ -36,12 +36,12 @@ namespace EduSys
         // Methods related to Courses
         public void CreateCourse(string courseName, int courseID)
         {
-
+            
         }
 
         public void ViewCourse()
         {
-
+        
         }
         
         public void ListCourses()
