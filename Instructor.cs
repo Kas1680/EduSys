@@ -33,13 +33,12 @@ namespace EduSys
         {
             return this.password.getPw();
         }
-        // Methods related to Courses
         public void CreateCourse(string courseName, int courseID)
         {
             
         }
 
-        public void ViewCourse()
+        public void ViewCourses()
         {
         
         }
@@ -49,7 +48,6 @@ namespace EduSys
 
         }
 
-        // Actions Related to Assignments
         
 
 
