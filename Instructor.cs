@@ -11,9 +11,8 @@ namespace EduSys
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Departments { get; set; }
-
+        public Account insAccount { get; set; }
         public Email EmailAddress { get; set; }
-        private Password password { get; set; }
         private static int IDgenerator = 10000;
 
         // Constructor
@@ -23,16 +22,53 @@ namespace EduSys
             this.FirstName = FirstName;
             this.LastName = LastName;
             this.Departments = Department;
-            this.password = new Password(pw);
             this.ID = IDgenerator;
+            this.insAccount = new Account(IDmaker(FirstName, LastName), new Password(pw));
             this.EmailAddress = new Email(FirstName, LastName, ID) ;
             IDgenerator++;
         }
 
-        public string getPW()
+        public string IDmaker(string FirstName, string LastName)
         {
-            return this.password.getPw();
+            StringBuilder sb = new StringBuilder();
+            sb.Append(FirstName[0]);
+            sb.Append(LastName);
+            sb.Append(this.ID);
+            return sb.ToString();
         }
+
+//------------------------------------------------------Getter Here
+        public string getPw()
+        {
+            return this.insAccount.getPw();
+        }
+
+        public string getFirstName()
+        {
+            return this.FirstName;
+        }
+
+        public string getLastName()
+        {
+            return this.LastName;
+        }
+
+        public int getID()
+        {
+            return this.ID;
+        }
+
+        public string getDepartment()
+        {
+            return this.Departments;
+        }
+
+        public string getEmail()
+        {
+            return this.EmailAddress.getEmail();
+        }
+
+//------------------------------------------------------Other Functions
         public void CreateCourse(string courseName, int courseID)
         {
             

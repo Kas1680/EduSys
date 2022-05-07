@@ -8,6 +8,8 @@ namespace EduSys
 {
     public class Menu
     {
+        string error = "Error: Invalid Input";
+
         public void instructorMenu(Instructor inst)
         {
             int input = 0;
@@ -40,6 +42,11 @@ namespace EduSys
 
         public void studentMenu()
         {
+             
+        }
+
+        public void TAMenu()
+        {
 
         }
         
@@ -52,7 +59,7 @@ namespace EduSys
                 Console.WriteLine("1 - Login");
                 Console.WriteLine("2 - Sign up");
                 Console.WriteLine("3 - Shutdown System");
-
+                Console.Write("Enter Choice: ");
                 userChoice = Console.Read();
 
                 if(userChoice == 1)
@@ -63,13 +70,17 @@ namespace EduSys
                 {
                     this.signup();
                 }
-                else
+                else if(userChoice == 3)
                 {
                     System.Environment.Exit(0);
                 }
+                else
+                {
+                    Console.WriteLine(error);
+                }
             }
         }
-
+// -----------------------------------------------------------------//
         public void login()
         {
             int count = 3;
@@ -77,7 +88,6 @@ namespace EduSys
             string userPW;
             while(count > 0)
             {
-                Console.WriteLine("Please make a choice:");
                 Console.WriteLine("User Name: ");
                 userID = Console.ReadLine();
                 Console.WriteLine("Password: ");
@@ -109,11 +119,40 @@ namespace EduSys
                         this.CreateTAAccount();
                         break;
                     default:
-                        Console.WriteLine("Error - Invalid Input");
+                        Console.WriteLine(error);
                         break;
                 }
 
             }
         } 
+// -----------------------------------------------------------------//
+
+        public void CreateCourseMenu()
+        {
+            Console.WriteLine("Please Enter Course Code: ");
+            string courseCode = Console.ReadLine();
+            Console.WriteLine("Please Enter Program Name: ");
+            string progName = Console.ReadLine();
+            Console.WriteLine();
+            Console.WriteLine();
+        }
+
+
+// -----------------------------------------------------------------//
+
+        public void CreateInstructorAccount()
+        {
+
+        }
+
+        public void CreateStudentAccount()
+        {
+
+        }
+
+        public void CreateTAAccount()
+        {
+                
+        }
     }
 }
