@@ -11,16 +11,17 @@ namespace EduSys
         public string UserName { get; set; }
         public Password Password { get; set; }
 
-        public List<Account> ListOfAccounts { get; set; }
         public Account(string UserName, Password Password)
         {
             this.UserName = UserName;
             this.Password = Password;
         }
 
-        public bool verifyAccount(string userName, string password)
+
+        public bool verifyAccount(string userName, string password )
         {
-            foreach(Account account in ListOfAccounts)
+
+            foreach(Account account in )
             {
                 // UserName exists in the database, now check for password correctness
                 if (account.getUser() == userName)
@@ -51,7 +52,7 @@ namespace EduSys
 
         public bool isDuplicate(string userName)
         {
-            foreach(Account account in ListOfAccounts){
+            foreach(Account account in ){
                 if(account.UserName == userName)
                 {
                     return true;

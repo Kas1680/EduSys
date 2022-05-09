@@ -13,7 +13,7 @@ namespace EduSys
         public string Departments { get; set; }
         public Account insAccount { get; set; }
         public Email EmailAddress { get; set; }
-        private static int IDgenerator = 10000;
+        private static int IDgenerator = 100000;
 
         // Constructor
         public Instructor(string FirstName, string LastName, 
