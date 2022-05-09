@@ -10,10 +10,11 @@ namespace EduSys
     {
         static void Main(string [] args)
         {
-            Email myEmail = new Email("Kas", "Kai", 1680);
-            Console.WriteLine(myEmail.getEmail());
-
             Instructor kas = new Instructor("Kas", "Kai", "Math", "asdf123");
+            Console.WriteLine(kas.getPw());
+            Console.WriteLine(kas.getEmail());
+
+            Menu menu = new Menu();
         }
     }
 }

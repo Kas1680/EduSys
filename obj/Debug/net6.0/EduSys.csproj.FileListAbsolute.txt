@@ -13,3 +13,5 @@ C:\Users\User\Desktop\Summer\Project\EduSys\obj\Debug\net6.0\ref\EduSys.dll
 C:\Users\User\Desktop\Summer\Project\EduSys\obj\Debug\net6.0\EduSys.pdb
 C:\Users\User\Desktop\Summer\Project\EduSys\obj\Debug\net6.0\EduSys.genruntimeconfig.cache
 C:\Users\User\Desktop\Summer\Project\EduSys\obj\Debug\net6.0\refint\EduSys.dll
+C:\Users\User\Desktop\Summer\Project\EduSys\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\User\Desktop\Summer\Project\EduSys\obj\Debug\net6.0\EduSys.csproj.CopyComplete

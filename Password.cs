@@ -12,14 +12,22 @@ namespace EduSys
         
         public Password(string pw)
         {
-            this.password = pw;
+            if (verifyPW(pw))
+            {
+                this.password = pw;
+            }
+            else
+            // Generate a random password for user
+            {
+                this.password = generatePW();
+            }
         }
 
         /* 
          * Password requirement is to have 1 uppercase, 1 lowercase, 1 symbol and 
          * one number. Length has to be at least 8 character long
         */ 
-        private bool verifyPW(string pw)
+        public bool verifyPW(string pw)
         {
             bool isVer = false;                
 
@@ -60,5 +68,26 @@ namespace EduSys
             return isVer;
         }
 
+        //-----------------------------//
+        private string generatePW()
+        {
+            StringBuilder sb = new StringBuilder();
+                        
+            for(int i = 0; i < 8; i++)
+            {
+                sb.Append(randomChar());
+            }
+            return sb.ToString(); 
+        }
+        
+        private char randomChar()
+        {
+            Random random = new Random();
+            return (char)random.Next(33, 122);
+        }
+        public string getPw()
+        {
+            return this.password;
+        }
     }
 }
